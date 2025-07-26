@@ -1,0 +1,300 @@
+/* ================= GLOBAL ================= */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* ================= CLUB HEADER ================= */
+.club-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.club-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.club-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid #4a90e2;
+}
+
+.join-btn {
+  background: #4a90e2;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.join-btn:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  margin-bottom: 2rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ================= ABOUT EDITOR ================= */
+.about-editor {
+  width: 100%;
+  height: 100px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+/* ================= EDIT & SAVE BUTTONS ================= */
+.edit-btn, .save-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #f5a623;
+  color: white;
+}
+
+.save-btn {
+  background-color: #7ed321;
+  color: white;
+}
+
+.edit-btn:hover, .save-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ================= HEAD CARD ================= */
+.head-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.head-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4a90e2;
+}
+
+/* ================= GALLERY ================= */
+#previous-event-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 1rem 0;
+  justify-content: start;
+}
+
+.gallery-thumb {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.gallery-thumb:hover {
+  transform: scale(1.05);
+}
+
+/* Floating Delete Button for Gallery (optional) */
+.delete-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.gallery-thumb:hover + .delete-btn {
+  opacity: 1;
+}
+
+/* ================= MODALS ================= */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+/* Upload Modal Content */
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 1.25rem;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Full Image View (for #imageModal) */
+#imageModal img {
+  max-width: 90%;
+  max-height: 80vh;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+#modalCaption {
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close:hover {
+  color: #fff;
+}
+
+/* ================= UPLOAD FORM ================= */
+#gallery-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#gallery-form input[type="file"],
+#gallery-form input[type="text"],
+#gallery-form input[type="date"] {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#gallery-form .btn-primary {
+  padding: 0.6rem;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+#gallery-form .btn-primary:hover {
+  background-color: #005fd1;
+}
+
+/* ================= ADD EVENT BUTTON ================= */
+#open-gallery-modal {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#open-gallery-modal:hover {
+  background: #005fd1;
+}
+.gallery-item {
+  position: relative;
+  display: inline-block;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background: rgba(200, 0, 0, 1);
+}
+
+.gallery-item:hover .delete-btn {
+  display: block;
+}

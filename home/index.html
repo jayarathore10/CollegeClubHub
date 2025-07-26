@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="College Club Hub - Explore campus clubs, upcoming events, and connect with student communities.">
+
+  <title>College Club Hub</title>
+  <link rel="stylesheet" href="style1.css">
+
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-section">
+      <img src="../images/medicaps-logo.png" alt="Medicaps Logo" class="logo">
+      <!-- <span class="brand-name">College Club Hub</span> -->
+    </div>
+
+    <div class="nav-links" id="nav-links">
+      <a href="index.html"><i data-feather="home"></i>Home</a>
+      <a href="clubs/clubs.html"><i data-feather="users"></i>Clubs</a>  
+      <!-- <a href="clubs.html">Clubs</a> -->
+      <a href="events/event.html"><i data-feather="calendar"></i>Events</a>
+      <a href="about/about.html"><i data-feather="info"></i>About Us</a>
+      <a href="loginregister/login.html"><i data-feather="log-in"></i>Login/Register</a>
+      <a href="notification/notification.html"><i data-feather="bell"></i>Notifications</a>
+      <a id="profile-link" style="display: none;"><i data-feather="Users"></i>Profile</a><!-- 🟢 Add this -->
+    </div>
+
+    <!-- Hamburger for mobile -->
+    <!-- <div class="hamburger" id="hamburger">
+      <i data-feather="menu"></i>
+    </div> -->
+  </nav>
+  <section class="hero-section">
+  <div class="hero-content">
+    <h1>Welcome to Medicaps Campus</h1>
+    <p>Explore Clubs, Events & More!</p>
+  </div>
+</section>
+
+<section class="about-events-section fade-in">
+  <h2> About:  Medicaps University Clubs</h2>
+  <p>
+    Medicaps College Clubs are the heartbeat of campus life — offering students a platform to explore, lead, and innovate.  
+  From coding and entrepreneurship to culture and creativity, our clubs are where passions come alive.  
+  Each club encourages collaboration, builds confidence, and helps students grow both personally and professionally.
+ </p>
+</section>
+
+  <section class="clubs">
+
+  <section class="club-section">
+  <div class="club-text reveal-left">
+    <h2>Discover Our Vibrant Clubs</h2>
+    <p>
+      Coding, creativity, culture, or causes — Medicaps clubs are where talent meets opportunity.  
+      Be a leader. Be a doer. Be a club member!
+    </p>
+    <a href="../home/clubs/clubs.html">
+      <button class="explore-btn">Explore Clubs</button>
+    </a>
+  </div>
+
+  <div class="club-collage reveal-right">
+    <div class="collage-grid">
+      <img src="../images/moon.jpg" class="collage-img" alt="Coding Club">
+      <img src="../images/FUN1.jpg" class="collage-img" alt="Dance Club">
+      <img src="../images/FUN6.jpg" class="collage-img" alt="Photo Club">
+      <img src="../images/FUN2.jpg" class="collage-img" alt="Eco Club">
+      <img src="../images/FUN3.jpg" class="collage-img" alt="Music Club">
+    </div>
+  </div>
+</section>
+<section class="about-events-section fade-in">
+  <h2>About: Medicaps Celebrations & Events</h2>
+  <p>
+    Medicaps University is home to some of the most exciting and colorful celebrations — from annual fests, cultural nights, and tech expos to sports tournaments and social drives.
+    These events reflect our vibrant student community, celebrate creativity and collaboration, and help every student make lasting campus memories.
+  </p>
+  
+</section>
+
+<!-- 
+
+EVENT -->
+  <section class="club-section">
+  <div class="club-text reveal-left">
+    <h2>Discover Our Exciting Events</h2>
+    <p>
+       From vibrant cultural fests to technical hackathons, Medicaps University hosts events that bring the campus to life.  
+      These events are the perfect blend of learning, fun, and celebration — join us and make memories that last forever!
+
+    </p>
+    <a href="../home/events/event.html" class="explore-btn">Register for Upcoming Events</a>
+  </div>
+
+  <div class="club-collage reveal-right">
+    <div class="collage-grid">
+      <img src="../images/moon.jpg" class="collage-img" alt="Coding Club">
+      <img src="../images/FUN1.jpg" class="collage-img" alt="Dance Club">
+      <img src="../images/FUN6.jpg" class="collage-img" alt="Photo Club">
+      <img src="../images/FUN2.jpg" class="collage-img" alt="Eco Club">
+      <img src="../images/FUN3.jpg" class="collage-img" alt="Music Club">
+    </div>
+  </div>
+</section>
+
+
+  
+
+
+  <section class="why-join-section reveal-fade">
+  <div class="why-join-container">
+    <div class="why-text">
+      <h2>Why Join a Club at Medicaps?</h2>
+      <ul>
+        <li><strong>Find Your Tribe:</strong> Meet like-minded students who share your passion.</li>
+        <li><strong>Discover Yourself:</strong> Learn leadership, communication & teamwork.</li>
+        <li><strong>Break the Comfort Zone:</strong> Perform, lead, speak, and shine beyond classrooms.</li>
+        <li><strong>Build a Strong Portfolio:</strong> Organize events & win competitions.</li>
+        <li><strong>Create Memories:</strong> College life isn’t just about marks — it’s about moments.</li>
+      </ul>
+      <p class="quote">✨ <em>Clubs turn ordinary students into confident leaders and unforgettable performers.</em></p>
+      <a href="../home/clubs/clubs.html">
+        <button class="join-btn">Join a Club Now</button>
+      </a>
+    </div>
+
+    <div class="why-image">
+      <img src="../images/moon.jpg" alt="Students collaborating">
+    </div>
+  </div>
+</section>
+
+
+  <section class="gallery-section" style="padding: 20px 80px;">
+  <div id="gallery" style="display: flex; overflow-x: auto; scroll-behavior: smooth;">
+    <img src="../images/moon1.jpg" style="width: 300px; margin-right: 10px;">
+    <img src="../images/FUN1.jpg" style="width: 300px; margin-right: 10px;">
+    <img src="../images/AUD.jpg" style="width: 300px; margin-right: 10px;">
+    <img src="../images/moon.jpg" style="width: 300px; margin-right: 10px;">
+    <img src="../images/FUN6.jpg" style="width: 300px; margin-right: 10px;">
+    <img src="../images/ncc.jpg" style="width: 300px; margin-right: 10px;">
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="images/jaya.png" alt="Developer Logo">
+    <p>Developed by Jaya Rathore</p>
+    <p>Email: jayarathore548@gmail.com</p>
+  </footer>
+
+
+
+  <!-- ✅ Feather icons init -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- ✅ Link to external JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

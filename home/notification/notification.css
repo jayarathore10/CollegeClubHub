@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.main-content {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    padding: 20px;
+}
+  
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Logo Section */
+    .logo-section {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo {
+      height: 48px;
+      margin-right: 12px;
+    }
+    
+    .brand-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2563eb; /* Tailwind blue-600 */
+    }
+    
+    /* Nav Links */
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: #374151; /* Tailwind gray-700 */
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+      color: #2563eb;
+    }
+    
+    .nav-links i {
+      margin-right: 6px;
+    }
+.notification-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.notification-container:hover {
+    transform: scale(1.02);
+}
+
+.notification-container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+}
+
+.notification-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    background: #007bff;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.notification-item:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.notification-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.notification-item p {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+.notification-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+    /* footer */
+    footer {
+    background: #0e1030;
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  footer img {
+    height: 40px;
+    margin-bottom: 10px;
+  }  

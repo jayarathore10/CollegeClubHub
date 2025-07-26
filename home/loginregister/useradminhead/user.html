@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard - College Club Hub</title>
+  <link rel="stylesheet" href="user.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-section">
+      <img src="medicaps-logo.png" alt="Medicaps Logo" class="logo" />
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html"><i data-feather="home"></i>Dashboard</a>
+      <a href="#" id="logout"><i data-feather="log-out"></i>Logout</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <i data-feather="menu"></i>
+    </div>
+  </nav>
+
+  <!-- Main Dashboard Content -->
+  <main class="dashboard">
+    <h1>Welcome, User!</h1>
+    <section class="cards">
+      <div class="card" id="view-clubs-card">
+        <h2>View My Clubs</h2>
+        <p>See all clubs you joined</p>
+      </div>
+      <div class="card" id="view-events-card">
+        <h2>View My Events</h2>
+        <p>See all events of your clubs</p>
+      </div>
+    </section>
+
+    <!-- Joined Clubs Section -->
+    <section id="clubs-section" class="hidden">
+      <h2>Your Clubs</h2>
+      <div id="yourClubs" class="club-cards"></div>
+    </section>
+
+    <!-- Club Events Section -->
+    <section id="events-section" class="hidden">
+      <h2>Your Club Events</h2>
+      <div id="yourEvents">Loading...</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by Jaya Rathore</p>
+  </footer>
+
+  <script src="user.js"></script>
+  <script>feather.replace();</script>
+</body>
+</html>

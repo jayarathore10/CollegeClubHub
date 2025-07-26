@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Club Detail</title>
+  <link rel="stylesheet" href="user.css" />
+</head>
+<body>
+  <h1 id="club-name">Loading...</h1>
+  <p id="club-description">Loading description...</p>
+
+  <script>
+    const clubName = localStorage.getItem("selectedClub");
+    document.getElementById("club-name").innerText = clubName;
+
+    fetch(`http://localhost:3001/api/clubs/${clubName}`)
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("club-description").innerText = data.description || "No description.";
+      });
+  </script>
+</body>
+</html>

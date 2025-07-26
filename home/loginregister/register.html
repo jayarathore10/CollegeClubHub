@@ -1,0 +1,94 @@
+<!-- 🧠 REPLACE your existing register.html content with this -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register - College Club Hub</title>
+  <link rel="stylesheet" href="register.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-section">
+      <img src="../../images/medicaps-logo.png" alt="Medicaps Logo" class="logo" />
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html"><i data-feather="home"></i>Home</a>
+      <a href="clubs.html"><i data-feather="users"></i>Clubs</a>
+      <a href="event.html"><i data-feather="calendar"></i>Events</a>
+      <a href="about.html"><i data-feather="info"></i>About Us</a>
+      <a href="loginregister/login.html"><i data-feather="log-in"></i>Login/Register</a>
+      <a href="notification.html"><i data-feather="bell"></i>Notifications</a>
+      <a href="stdprofile.html"><i data-feather="user"></i>Profile</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <i data-feather="menu"></i>
+    </div>
+  </nav>
+
+  <!-- Register Form -->
+  <div class="form-container">
+    <h1>Register</h1>
+    <form id="register-form">
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+
+      <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="Admin">Admin</option>
+        <option value="head">Head</option>
+        <option value="User">User</option>
+      </select>
+
+      <!-- Club Selection (only for Heads) -->
+      <!-- Club selection for heads -->
+<div id="head-club-section" style="display: none;">
+  <label>Select Club (for Heads):</label>
+  <select id="head-club-dropdown">
+    <option value="">-- Select Club --</option>
+  </select>
+  <input type="password" id="head-club-password" placeholder="Enter Head Password" />
+</div>
+
+
+      <!-- Head Password Verification -->
+      <div id="headPasswordField" style="display: none;">
+        <input type="password" id="headPassword" placeholder="Enter Head Password" />
+      </div>
+
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <img src="images/jaya-logo.png" alt="Developer Logo" />
+    <p>Developed by Jaya Rathore</p>
+    <p>Email: yourmail@domain.com</p>
+  </footer>
+
+  <!-- Feather Icons + JS -->
+  <script>feather.replace();</script>
+  <script>
+    // Toggle fields based on selected role
+    const roleSelect = document.getElementById("role");
+    const clubField = document.getElementById("clubField");
+    const headPasswordField = document.getElementById("headPasswordField");
+
+    roleSelect.addEventListener("change", () => {
+      const selectedRole = roleSelect.value;
+      if (selectedRole === "Head") {
+        clubField.style.display = "block";
+        headPasswordField.style.display = "block";
+      } else {
+        clubField.style.display = "none";
+        headPasswordField.style.display = "none";
+      }
+    });
+  </script>
+  <script src="register.js"></script>
+</body>
+</html>

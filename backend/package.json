@@ -1,15 +1,25 @@
 {
+<<<<<<< HEAD
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+>>>>>>> 94d19bf127d6513fa80e3e3b3c2341734413285a
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+<<<<<<< HEAD
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
@@ -17,5 +27,11 @@
     "mongoose": "^8.16.5",
     "multer": "^2.0.2",
     "sharp": "^0.34.3"
+=======
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.1",
+    "nodemon": "^3.1.10"
+>>>>>>> 94d19bf127d6513fa80e3e3b3c2341734413285a
   }
 }

@@ -1,0 +1,43 @@
+<!-- user.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="user.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="../../assets/medicapslogo.png" alt="Logo" class="logo" />
+      <span class="nav-title">College Club Hub</span>
+    </div>
+    <div class="navbar-right">
+      <a href="user.html">Dashboard</a>
+      <a href="setting.html">Settings</a>
+      <a href="#" id="logout-btn">Logout</a>
+    </div>
+  </nav>
+
+  <main class="user-dashboard">
+    <h1>Welcome, User!</h1>
+    <div class="card-container">
+      <div class="card" onclick="location.href='userclubs.html'">
+        <h2>View My Clubs</h2>
+        <p>See all clubs you joined</p>
+      </div>
+      <div class="card" onclick="location.href='userevents.html'">
+        <h2>View My Events</h2>
+        <p>See all events of your clubs</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Developed by Jaya Rathore</p>
+  </footer>
+
+  <script src="user.js"></script>
+</body>
+</html>

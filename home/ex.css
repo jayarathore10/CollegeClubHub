@@ -1,0 +1,79 @@
+.why-join-section {
+  padding: 60px 20px;
+  background-color: #fffdee;
+}
+
+.why-join-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.why-text {
+  flex: 1 1 480px;
+}
+
+.why-text h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.why-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.why-text ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
+}
+
+.quote {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.join-btn {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-btn:hover {
+  background-color: #388e3c;
+}
+
+.why-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.why-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}

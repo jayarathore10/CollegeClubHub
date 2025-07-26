@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exploremoregallery.css">
+</head>
+<body>
+   <section class="past-events">
+  <h2 class="events-title">Our Past Events Memories</h2>
+
+  <div class="events-gallery">
+    <div class="event-card" onclick="showPopup('../../images/event1.jpg', 'Dance Show', '10th May 2025, 6 PM - 9 PM')">
+      <img src="../../../images/FUN1.jpg" alt="Dance Show">
+    </div>
+    <div class="event-card" onclick="showPopup('../../../images/FUN3.jpg', 'Annual Fest', '22nd Feb 2025, 5 PM - 8 PM')">
+      <img src="../../../images/FUN3.jpg" alt="Annual Fest">
+    </div>
+    <div class="event-card" onclick="showPopup('../../../images/fun4.jpg', 'Drama Night', '15th April 2025, 4 PM - 7 PM')">
+      <img src="../../../images/fun4.jpg" alt="Drama Night">
+    </div>
+    <div class="event-card" onclick="showPopup('../../../images/FUN5.jpg', 'Balloon Launch', '1st Jan 2025, 10 AM')">
+      <img src="../../../images/FUN5.jpg" alt="Balloon Launch">
+    </div>
+  </div>
+
+  <div class="explore-more">
+    <a href="all-events.html" class="explore-btn">✨ Explore More</a>
+  </div>
+</section>
+
+<!-- Popup -->
+<div id="popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <img id="popup-img" src="" alt="Event Image">
+    <h3 id="popup-title"></h3>
+    <p id="popup-details"></p>
+  </div>
+</div>
+
+<script>
+    function showPopup(imagePath, title, details) {
+    document.getElementById('popup-img').src = imagePath;
+    document.getElementById('popup-title').innerText = title;
+    document.getElementById('popup-details').innerText = details;
+    document.getElementById('popup').style.display = 'flex';
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+</script>
+  
+
+</body>
+</html>

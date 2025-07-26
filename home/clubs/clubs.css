@@ -1,0 +1,133 @@
+
+  
+  /* General Reset */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+    }
+    
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Logo Section */
+    .logo-section {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo {
+      height: 48px;
+      margin-right: 12px;
+    }
+    
+    .brand-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2563eb; /* Tailwind blue-600 */
+    }
+    
+    /* Nav Links */
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: #374151; /* Tailwind gray-700 */
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+      color: #2563eb;
+    }
+    
+    .nav-links i {
+      margin-right: 6px;
+    }
+/* 
+    card style */
+ /* clubs.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.club-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  gap: 25px;
+}
+
+.club-card {
+  width: 260px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.club-card:hover {
+  transform: translateY(-6px);
+}
+
+.club-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.club-card h3 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.club-card p {
+  font-size: 14px;
+  margin: 0 10px 15px;
+  color: #555;
+}
+footer {
+  background: #031d44;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
