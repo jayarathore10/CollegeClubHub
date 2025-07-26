@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Face Recognition Attendance</title>
+  <link rel="stylesheet" href="take-attendance.css" />
+</head>
+<body>
+  <header>
+    <h1>📷 Face Recognition Attendance System</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- Upload Section -->
+    <section id="upload-section">
+      <form id="uploadForm" enctype="multipart/form-data">
+        <label for="classImage">Upload Class Photo:</label>
+        <input type="file" name="classImage" id="classImage" accept="image/*" required />
+        <button type="submit">📤 Upload & Recognize</button>
+      </form>
+    </section>
+
+    <!-- Summary Cards -->
+    <section class="summary-cards">
+      <div class="card" id="total-card">
+        <h2>Total Faces</h2>
+        <p id="total-count">0</p>
+      </div>
+      <div class="card clickable" id="present-card">
+        <h2>Recognized</h2>
+        <p id="present-count">0</p>
+      </div>
+      <div class="card clickable" id="absent-card">
+        <h2>Unknown</h2>
+        <p id="absent-count">0</p>
+      </div>
+    </section>
+
+    <!-- Student Lists -->
+    <div class="student-list" id="student-list" style="display:none;">
+      <h3 id="list-title"></h3>
+      <ul id="list-content"></ul>
+    </div>
+    <section class="logs">
+  <h3>📋 Logs</h3>
+  <pre id="log-output" style="white-space: pre-wrap; background: #f8f8f8; padding: 10px; border-radius: 5px;"></pre>
+</section>
+
+
+  </main>
+
+  <script src="take-attendence.js"></script>
+</body>
+</html>

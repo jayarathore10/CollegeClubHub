@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin-dashboard.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h2>Admin Panel</h2>
+    <button id="logout-btn">Logout</button>
+  </nav>
+
+  <main class="container">
+    <h1>Welcome, <span id="admin-name">Admin</span> 🛠️</h1>
+
+    <div class="dashboard-grid">
+      <div class="card">
+        <h3>Manage Teachers</h3>
+        <p>View and manage teacher accounts.</p>
+        <button onclick="location.href='teachers/manage-teachers.html'">Open</button>
+      </div>
+
+      <div class="card">
+        <h3>Manage Classes</h3>
+        <p>Create and manage class details and passwords.</p>
+        <button onclick="location.href='classes/manage-classes.html'">View</button>
+      </div>
+
+      <div class="card">
+        <h3>Manage Students</h3>
+        <p>View and manage student records.</p>
+        <button onclick="location.href='students/manage-student.html'">Open</button>
+      </div>
+
+      <div class="card">
+        <h3>Attendance Logs</h3>
+        <p>Monitor and export logs.</p>
+        <button onclick="location.href='manage-classes.html'">View</button>
+      </div>
+
+      <div class="card">
+        <h3>Settings</h3>
+        <p>Change system configurations.</p>
+        <button onclick="location.href='manage-classes.html'">Settings</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="admin-dashboard.js"></script>
+</body>
+</html>

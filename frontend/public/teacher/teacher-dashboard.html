@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="teacher-dashboard.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h2>Attendance System</h2>
+    <button id="logout-btn">Logout</button>
+  </nav>
+
+  <main class="container">
+    <h1>Welcome, <span id="teacher-name">Teacher</span> 👋</h1>
+
+    <div class="dashboard-grid">
+      <div class="card">
+        <h3>Take Attendance</h3>
+        <p>Start attendance for your class.</p>
+        <a href="take-attendence/take-attendance.html">
+  <button class="start-btn">Start</button>
+</a>
+
+      </div>
+
+      <div class="card">
+        <h3>View Reports</h3>
+        <p>Check attendance reports by date.</p>
+        <button class="view-reports">View</button>
+      </div>
+
+      <div class="card">
+        <h3>Class Details</h3>
+        <p>Manage students and subjects.</p>
+        <a href="class details/class-details.html"></a>
+        <button class="manage-btn">Manage</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="teacher-dashboard.js"></script>
+</body>
+</html>

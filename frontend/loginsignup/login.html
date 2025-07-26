@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <form id="login-form">
+      <h2>Login</h2>
+
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+
+      <select id="role" required>
+    <option value="">Select Role</option>
+    <option value="admin">Admin</option>
+    <option value="teacher">Teacher</option>
+  </select>
+
+  <!-- Class Dropdown - only visible for teachers -->
+  <select id="class-select" style="display: none;">
+    <option value="">Select Class</option>
+    <!-- Classes will be dynamically added here -->
+  </select>
+
+  <!-- Class password field (visible only when class selected) -->
+<input type="password" id="class-password" placeholder="Enter Class Password" style="display: none;" />
+
+
+      <button type="submit">Login</button>
+      <p class="switch-link">Don't have an account? <a href="../loginsignup/signup.html">Sign up here</a></p>
+      <p id="error-msg" class="error"></p>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

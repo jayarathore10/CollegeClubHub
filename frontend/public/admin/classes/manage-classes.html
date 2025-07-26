@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manage Classes</title>
+  <link rel="stylesheet" href="manage-classes.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Manage Classes</h1>
+    <button id="addClassBtn">➕ Add Class</button>
+  </header>
+
+  <!-- Class Cards -->
+  <section id="classCards" class="card-container"></section>
+
+  <!-- Add Class Modal -->
+  <div id="classModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Add New Class</h2>
+      <form id="addClassForm">
+        <input type="text" placeholder="Class Name (e.g., 10A)" id="className" required />
+        <input type="password" placeholder="Class Password" id="classPassword" required />
+        <input type="email" placeholder="Optional: Teacher Email" id="teacherEmail" />
+        <button type="submit">Save Class</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+      </form>
+    </div>
+  </div>
+  <!-- Add Student Modal -->
+<div id="studentModal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Add New Student</h2>
+    <form id="addStudentForm" enctype="multipart/form-data">
+      <input type="text" id="studentName" placeholder="Student Name" required />
+      <input type="file" id="studentPhoto" accept="image/*" required />
+      <input type="hidden" id="studentClassName" />
+      <input type="text" placeholder="Roll Number" name="rollNumber" required>
+
+      <input type="email" id="studentEmail" placeholder="Student Email" required />
+
+      <button type="submit">Add Student</button>
+      <button type="button" id="cancelStudentBtn">Cancel</button>
+    </form>
+  </div>
+</div>
+
+
+  <script src="manage-classes.js"></script>
+</body>
+</html>

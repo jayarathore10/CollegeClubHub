@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>View Reports</title>
+  <link rel="stylesheet" href="view-reports.css" />
+</head>
+<body>
+  <header>
+    <h1>📊 Attendance Reports</h1>
+    <button id="backBtn">← Back</button>
+  </header>
+
+  <main class="container">
+    <h2>Reports for <span id="class-name"></span></h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Student Name</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="report-body">
+        <!-- Dynamic rows here -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="view-reports.js"></script>
+</body>
+</html>
