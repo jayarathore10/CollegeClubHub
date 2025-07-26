@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Club Details</title>
+  <link rel="stylesheet" href="club-details.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="club-header">
+      <h1 id="club-name">Club Name</h1>
+    </header>
+
+    <div class="club-card">
+      <img id="club-image" class="club-image" src="" alt="Club Image" />
+      <p id="club-tagline">Tagline here</p>
+      <button id="join-btn" class="join-btn">Join Club</button>
+    </div>
+
+    <!-- About Section -->
+    <section class="section about-section">
+      <h2>About</h2>
+      <p id="club-about">About not provided.</p>
+      <textarea id="about-editor" class="about-editor" style="display: none;"></textarea>
+      <div class="about-buttons">
+        <button id="edit-about-btn" class="edit-btn" style="display: none;">Edit About</button>
+        <button id="save-about-btn" class="save-btn" style="display: none;">Save</button>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="section events-section">
+      <h2>Upcoming Events</h2>
+      <ul id="upcoming-events" class="event-list card-list">
+        <li>No upcoming events.</li>
+      </ul>
+    </section>
+    
+    <!-- Previous Events -->
+    <section class="section events-section">
+      <h2>Previous Events</h2>
+      <ul id="previous-events" class="event-list">
+        <li>No previous events.</li>
+      </ul>
+    </section>
+
+    <!-- Previous Event Gallery -->
+    <div class="section-card">
+      <h3>Previous Event Gallery</h3>
+      <div id="previous-event-gallery" class="gallery-container"></div>
+
+      <!-- Only visible for Head/Admin -->
+      <div id="upload-gallery-section" style="display: none;">
+  <button id="open-gallery-modal" class="btn btn-primary">Add Previous Event</button>
+</div>
+
+    </div>
+
+    <!-- Modal for Upload -->
+    <div id="gallery-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-gallery-modal">&times;</span>
+        <h3>Add Previous Event</h3>
+        <form id="gallery-form">
+          <input type="file" id="galleryImage" accept="image/*" required />
+          <input type="text" id="galleryCaption" placeholder="Caption" required />
+          <input type="date" id="galleryDate" required />
+          <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal for Viewing Images -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeImageModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="modalCaption"></div>
+    </div>
+
+    <!-- Club Head -->
+    <section class="section head-profile">
+      <h2>Club Head</h2>
+      <div class="head-card">
+        <img id="head-img" class="head-image" src="" alt="Club Head" />
+        <p id="head-name">Not Assigned</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="club-details.js"></script>
+</body>
+</html>

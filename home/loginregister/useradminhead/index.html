@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="College Club Hub - Explore campus clubs, upcoming events, and connect with student communities.">
+
+  <title>College Club Hub</title>
+  <link rel="stylesheet" href="style1.css">
+
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-section">
+      <img src="medicaps-logo.png" alt="Medicaps Logo" class="logo">
+      <!-- <span class="brand-name">College Club Hub</span> -->
+    </div>
+
+    <div class="nav-links" id="nav-links">
+      <a href="index.html"><i data-feather="home"></i>Home</a>
+      <a href="clubs/clubs.html"><i data-feather="users"></i>Clubs</a>  
+      <!-- <a href="clubs.html">Clubs</a> -->
+      <a href="events/event.html"><i data-feather="calendar"></i>Events</a>
+      <a href="about.html"><i data-feather="info"></i>About Us</a>
+      <a href="loginregister/login.html"><i data-feather="log-in"></i>Login/Register</a>
+      <a href="notification.html"><i data-feather="bell"></i>Notifications</a>
+      <a id="adminLink" href="admin.html">Admin Panel</a>
+      <a id="headLink" href="head.html">Head Dashboard</a>
+      <a id="userProfileLink" href="user.html">User Profile</a>
+
+      
+    </div>
+
+    <!-- Hamburger for mobile -->
+    <div class="hamburger" id="hamburger">
+      <i data-feather="menu"></i>
+    </div>
+  </nav>
+  <section class="hero-section">
+    <!-- <img src="college-campus.jpeg" alt="College Campus" class="hero-image">
+    <div class="hero-text">
+      <h1>Welcome to College Club Hub</h1>
+      <p>Explore. Connect. Celebrate Campus Life!</p>
+    </div> -->
+    <section class="hero-section">
+      <img id="slide" class="hero-image" src="college-campus.jpeg" alt="Hero Image">
+      <div class="hero-text">
+        <h1 id="slider-text">Welcome to Medicaps Campus</h1>
+      </div>
+    </section>
+  </section>    
+<!-- About colleg Section -->
+<section class="about" style="padding: 40px 20px; background-color: #f9f9f9;">
+  <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+    <h2 style="font-size: 2em; font-weight: bold; margin-bottom: 10px;">
+      About:  Medicaps University
+    </h2>
+    <p style="line-height: 1.6;">
+      Medi-Caps University is committed to academic excellence and vibrant campus life.<br>
+      Our vision is to nurture innovation and leadership among students.
+    </p>
+  </div>
+</section>
+
+
+<!-- Image Gallery Section (move it below) -->
+<section class="gallery-section" style="padding: 20px 80px;">
+  <div id="gallery" style="display: flex; overflow-x: auto; scroll-behavior: smooth;">
+    <img src="camp2.jpg" style="width: 300px; margin-right: 10px;">
+    <img src="clutural-clubmain.jpg" style="width: 300px; margin-right: 10px;">
+    <img src="clutural-club.jpg" style="width: 300px; margin-right: 10px;">
+    <img src="camp2.jpg" style="width: 300px; margin-right: 10px;">
+    <img src="clutural-clubmain.jpg" style="width: 300px; margin-right: 10px;">
+    <img src="clutural-club.jpg" style="width: 300px; margin-right: 10px;">
+  </div>
+</section>
+
+  <!-- Clubs Section -->
+  <!-- <section class="clubs">
+    <h2>Explore Campus Clubs</h2>
+    <div class="club-cards">
+
+      <div class="club-card cultural-club">
+        <img src="clutural-club.jpg" alt="Cultural Club">
+        <h3>Cultural Club</h3>
+        <p>Celebrate traditions, organize festivals, and promote diversity!</p>
+      </div>
+  
+      <div class="club-card sports-club">
+        <img src="sport-club.jpg" alt="Sports Club">
+        <h3>Sports Club</h3>
+        <p>Train, compete, and stay fit with various sports and games.</p>
+      </div>
+  
+      <div class="club-card technical-club">
+        <img src="tech-club.jpg" alt="Technical Club">
+        <h3>Technical Club</h3>
+        <p>Workshops, hackathons, and tech talks to build your skills.</p>
+      </div>
+  
+      <div class="club-card advanced-studies-club">
+        <img src="advstudy-club.jpg" alt="Advanced Studies Club">
+        <h3>Advanced Studies Club</h3>
+        <p>Deep dive into research, GATE prep, and career-oriented learning.</p>
+      </div>
+  
+      <div class="club-card art-creativity-club">
+        <img src="art-club.jpg" alt="Art and Creativity Club">
+        <h3>Art & Creativity Club</h3>
+        <p>Express yourself through painting, craft, and imagination.</p>
+      </div>
+  
+      <div class="club-card sahityik-club">
+        <img src="sahitiy-club.jpg" alt="Sahityik Club">
+        <h3>Sahityik Club</h3>
+        <p>Explore Hindi and regional literature, poetry, and storytelling.</p>
+      </div>
+  
+      <div class="club-card media-club">
+        <img src="media-club.jpg" alt="Media Club">
+        <h3>Media Club</h3>
+        <p>Content creation, interviews, reporting, and digital storytelling.</p>
+      </div>
+  
+      <div class="club-card social-eco-club">
+        <img src="images/social-eco-club.png" alt="Social and Eco Club">
+        <h3>Social & Eco Club</h3>
+        <p>Awareness drives, sustainability projects, and community work.</p>
+      </div>
+  
+      <div class="club-card photography-film-club">
+        <img src="photo-club.jpg" alt="Photography and Film Club">
+        <h3>Photography & Film Club</h3>
+        <p>Capture moments, make films, and learn visual storytelling.</p>
+      </div>
+  
+  
+      <div class="club-card techno-club">
+        <img src="tech-club-logo.jpg" alt="Techno Club">
+        <h3>Techno Club</h3>
+        <p>Explore technology innovations, gadgets, and automation ideas.</p>
+      </div>
+  
+      <div class="club-card science-club">
+        <img src="images/science-club.png" alt="Science Club">
+        <h3>Science Club</h3>
+        <p>Scientific experiments, discoveries, and engaging science fairs.</p>
+      </div>
+  
+      <div class="club-card yog-spiritual-club">
+        <img src="yog-logo.jpg" alt="Yog and Spiritual Club">
+        <h3>Yog & Spiritual Club</h3>
+        <p>Practice yoga, mindfulness, and explore inner peace and values.</p>
+      </div>
+   
+    </div>
+  </section>-->
+  <section class="clubs">
+    <h2 class="section-title">Explore Campus Clubs</h2>
+    <div class="card-container">
+      <a href="cultural-club.html" class="club-card cultural-club">
+        <div class="club-card cultural-club reveal-left"> 
+          <img src="clutural-club.jpg" alt="Cultural Club">
+          <h3>Cultural Club</h3>
+          <p>Celebrate traditions, organize festivals, and promote diversity!</p>
+        </div>
+      </a>
+      <div class="club-card sports-club reveal-left">
+        <img src="sport-club.jpg" alt="Sports Club">
+        <h3>Sports Club</h3>
+        <p>Train, compete, and stay fit with various sports and games.</p>
+      </div>
+  
+      <div class="club-card technical-club reveal-left">
+        <img src="tech-club.jpg" alt="Technical Club">
+        <h3>Technical Club</h3>
+        <p>Workshops, hackathons, and tech talks to build your skills.</p>
+      </div>
+  
+      <div class="club-card advanced-studies-club reveal-left">
+        <img src="advstudy-club.jpg" alt="Advanced Studies Club">
+        <h3>Advanced Studies Club</h3>
+        <p>Deep dive into research, GATE prep, and career-oriented learning.</p>
+      </div>
+  
+      <div class="club-card art-creativity-club reveal-left">
+        <img src="art-club.jpg" alt="Art and Creativity Club">
+        <h3>Art & Creativity Club</h3>
+        <p>Express yourself through painting, craft, and imagination.</p>
+      </div>
+  
+      <div class="club-card sahityik-club reveal-left">
+        <img src="sahitiy-club.jpg" alt="Sahityik Club">
+        <h3>Sahityik Club</h3>
+        <p>Explore Hindi and regional literature, poetry, and storytelling.</p>
+      </div>
+  
+      <div class="club-card media-club reveal-left">
+        <img src="media-club.jpg" alt="Media Club">
+        <h3>Media Club</h3>
+        <p>Content creation, interviews, reporting, and digital storytelling.</p>
+      </div>
+  
+      <div class="club-card social-eco-club reveal-left">
+        <img src="images/social-eco-club.png" alt="Social and Eco Club">
+        <h3>Social & Eco Club</h3>
+        <p>Awareness drives, sustainability projects, and community work.</p>
+      </div>
+  
+      <div class="club-card photography-film-club reveal-left">
+        <img src="photo-club.jpg" alt="Photography and Film Club">
+        <h3>Photography & Film Club</h3>
+        <p>Capture moments, make films, and learn visual storytelling.</p>
+      </div>
+  
+  
+      <div class="club-card techno-club reveal-left">
+        <img src="tech-club-logo.jpg" alt="Techno Club">
+        <h3>Techno Club</h3>
+        <p>Explore technology innovations, gadgets, and automation ideas.</p>
+      </div>
+  
+      <div class="club-card science-club reveal-left">
+        <img src="images/science-club.png" alt="Science Club">
+        <h3>Science Club</h3>
+        <p>Scientific experiments, discoveries, and engaging science fairs.</p>
+      </div>
+  
+      <div class="club-card yog-spiritual-club reveal-left">
+        <img src="yog-logo.jpg" alt="Yog and Spiritual Club">
+        <h3>Yog & Spiritual Club</h3>
+        <p>Practice yoga, mindfulness, and explore inner peace and values.</p>
+      </div>
+     
+  
+      
+    </div>
+    </section>
+  
+
+  <!-- Events Section -->
+  <section class="events-section">
+    <h2>Upcoming Events</h2>
+    <div class="event-cards">
+      <div class="event-card">
+        <img src="moon.jpg" alt="Tech Fest">
+        <div class="event-details">
+          <h4>TechFest 2025</h4>
+          <p>April 28 - Competitions, Seminars & More!</p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="sport-club.jpg" alt="Tech Fest">
+        <div class="event-details">
+          <h4>TechFest 2025</h4>
+          <p>April 28 - Competitions, Seminars & More!</p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="art-club.jpg" alt="Tech Fest">
+        <div class="event-details">
+          <h4>TechFest 2025</h4>
+          <p>April 28 - Competitions, Seminars & More!</p>
+        </div>
+      </div>
+      
+
+      <!-- Add more cards -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="jaya.png" alt="Developer Logo">
+    <p>Developed by Jaya Rathore</p>
+    <p>Email: jayarathore548@gmail.com</p>
+  </footer>
+
+
+
+  <!-- ✅ Feather icons init -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- ✅ Link to external JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

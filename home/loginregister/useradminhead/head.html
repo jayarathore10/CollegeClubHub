@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Head Dashboard</title>
+  <link rel="stylesheet" href="head.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Welcome, Club Head</h1>
+    <button id="logout-btn">Logout</button>
+  </nav>
+
+  <main class="dashboard">
+    <h2>Manage Your Club</h2>
+
+    <div class="cards-container">
+      <!-- Clickable Card 1 -->
+      <div class="card clickable" id="card-view-members">
+        <h3>View Members</h3>
+        <p>See who joined your club.</p>
+      </div>
+
+      <!-- Clickable Card 2 -->
+      <div class="card clickable" id="card-add-event">
+        <h3>Add Event</h3>
+        <p>Create and manage events.</p>
+      </div>
+
+      <!-- Clickable Card 3 -->
+      <!-- Clickable Card 3 -->
+<div class="card clickable" id="card-registered-students">
+  <h3>Registered Students</h3>
+  <p>View who registered for your events.</p>
+</div>
+    </div>
+
+
+    <!-- Hidden Sections -->
+
+    <!-- Members Section -->
+    <section id="section-members" class="hidden">
+      <h3>Club Members</h3>
+      <div id="members-list"></div>
+    </section>
+
+    <!-- Add Event Section -->
+    <section id="section-events" class="hidden">
+      <h3>Add Event</h3>
+      <input type="text" id="title" placeholder="Event Title" />
+      <textarea id="description" placeholder="Event Description"></textarea>
+      <input type="date" id="date" />
+      <input type="text" id="image" placeholder="Image URL" />
+      <button id="addEventBtn">Add Event</button>
+      <h4>Your Events</h4>
+      <div id="events-list"></div>
+    </section>
+
+    <!-- Edit Club Section -->
+    <!-- Registered Students Section -->
+<section id="section-registered-students" class="hidden">
+  <h3>Registered Students</h3>
+  <div id="registered-list"></div>
+</section>
+
+  </main>
+
+  <script src="head.js"></script>
+</body>
+</html>

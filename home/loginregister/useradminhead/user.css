@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar .logo {
+  height: 40px;
+}
+
+.nav-links a {
+  color: #374151;;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.dashboard {
+  padding: 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: lightcyan;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#yourClubs ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+#yourClubs li {
+  font-size: 16px;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #002d72;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+.hidden {
+  display: none;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  flex: 1;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: 0.2s;
+}
+
+.card:hover {
+  background: #e0e0e0;
+}
+.club-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.club-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  flex: 1 1 200px;
+  background: #f5f5f5;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 8px;
+}
+
+.club-card:hover {
+  background: #e0e0e0;
+}
+.club-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.club-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.club-card:hover {
+  background: #e0e0e0;
+}
+.event-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.event-image {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.club-card {
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.club-card:hover {
+  background: #e0e0e0;
+}
+
+
+
+

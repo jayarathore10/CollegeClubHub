@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join Cultural Club</title>
+  <link rel="stylesheet" href="join-clubform.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-overlay"></div>
+
+  <div class="join-container">
+    <h1>🎭 Join the Cultural Club</h1>
+    <p>Be part of something exciting! Showcase your talents and grow with us.</p>
+
+    <form class="join-form" action="#" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="text" name="college_id" placeholder="College ID" required />
+
+      <select name="interest" required>
+        <option value="">Select Interest</option>
+        <option value="Music">Music</option>
+        <option value="Dance">Dance</option>
+        <option value="Drama">Drama</option>
+        <option value="Anchoring">Anchoring</option>
+        <option value="Design">Design</option>
+      </select>
+
+      <textarea name="message" rows="4" placeholder="Tell us about yourself..."></textarea>
+      <button type="submit">✨ Join Now</button>
+    </form>
+  </div>
+  <script src="join-clubform.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <nav>
+    <h2>Admin Dashboard</h2>
+    <ul>
+      <li onclick="showDashboard()">Dashboard</li>
+      <li onclick="loadData('users')">Students</li>
+      <li onclick="loadData('clubs')">Clubs</li>
+      <li onclick="loadData('events')">Events</li>
+      <li onclick="openAddClubModal()">Add Club</li>
+      <li onclick="logout()">Logout</li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="stats">
+      <div class="card" onclick="loadData('users')">Students: <span id="userCount">0</span></div>
+      <div class="card" onclick="loadData('clubs')">Clubs: <span id="clubCount">0</span></div>
+      <div class="card" onclick="loadData('events')">Events: <span id="eventCount">0</span></div>
+    </div>
+
+    <div id="listContainer"></div>
+  </main>
+
+  <!-- Add Club Modal -->
+  <div id="clubModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeAddClubModal()">&times;</span>
+      <h2>Add Club</h2>
+      <form id="clubForm">
+        <input type="text" id="clubName" placeholder="Club Name" required />
+        <textarea id="clubDescription" placeholder="Description" required></textarea>
+        <input type="text" id="clubImage" placeholder="Club Image URL" required />
+        <input type="text" id="headName" placeholder="Club Head Name" required />
+        <input type="text" id="headImage" placeholder="Head Image URL" required />
+        <input type="password" id="headPassword" placeholder="Head Password" required />
+        <button type="submit">Add Club</button>
+      </form>
+    </div>
+  </div>
+  <div id="edit-club-section" style="display:none;">
+  <h2>Edit Club (Admin)</h2>
+  <input type="text" id="edit-club-name" placeholder="Club Name" />
+  <textarea id="edit-club-description" placeholder="Club Description"></textarea>
+  <input type="text" id="edit-head-name" placeholder="Head Name" />
+  <input type="text" id="edit-head-image" placeholder="Head Image URL" />
+  <input type="password" id="edit-head-password" placeholder="New Head Password" />
+  <button onclick="submitClubEdit()">Save Changes</button>
+</div>
+
+
+  <script src="admin.js"></script>
+</body>
+</html>

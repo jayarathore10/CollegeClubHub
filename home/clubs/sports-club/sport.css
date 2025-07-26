@@ -1,0 +1,317 @@
+/* General Styles */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section */
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 48px;
+  margin-right: 12px;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2563eb; /* Tailwind blue-600 */
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151; /* Tailwind gray-700 */
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.nav-links i {
+  margin-right: 6px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    background-image: url("clutural-clubmain.jpg"); /* adjust path if needed */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: rgb(34, 32, 101); /* makes text more visible */
+    text-align: center;
+    padding: 60px 20px;
+}
+/* 
+  .welcome-section {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+   */
+  .welcome-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s;
+  }
+  
+  .welcome-section p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: auto;
+    animation: fadeInUp 1.2s;
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Highlight Upcoming Event */
+  /* .highlight-event {
+    background: #fff4e6;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .highlight-event h2 {
+    color: #76a7f0;
+    margin-bottom: 20px;
+  }
+  
+  .highlight-event a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #6195e4;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .highlight-event a:hover {
+    background: #d65a3d;
+  } */
+
+  .join-club-section {
+    background-color: #fff5e6;
+    padding: 40px 20px;
+    margin: 40px auto;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .join-club-section:hover {
+    transform: scale(1.02);
+  }
+  
+  .join-club-section h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .join-club-section p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .join-button {
+    display: inline-block;
+    background-color: #4d94ff;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .join-button:hover {
+    background-color: #0066cc;
+  }
+  
+  
+  /* Event Calendar */
+  .event-calendar {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  .event-calendar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1d3557;
+  }
+  
+  .calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .calendar-table th, .calendar-table td {
+    padding: 15px;
+    border: 1px solid #eee;
+    text-align: center;
+  }
+  
+  .calendar-table th {
+    background: #1d3557;
+    color: white;
+  }
+  
+  .calendar-table tr:hover {
+    background: #f1f5f9;
+  }
+  
+  /* Clips Gallery */
+  .clips-gallery {
+    padding: 50px 20px;
+    background: #f8f9fa;
+  }
+  
+  .clips-gallery h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1d3557;
+  }
+  
+  .clip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .clip-grid img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.4s;
+  }
+  
+  .clip-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* About Club */
+  .about-club {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+  }
+  
+  .about-club h2 {
+    margin-bottom: 20px;
+    color: #1d3557;
+  }
+  
+  .about-club p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* President Section */
+  .president-section {
+    background: #fff4e6;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .president-card {
+    display: inline-block;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .president-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .president-card h3 {
+    margin-bottom: 5px;
+  }
+  
+  .president-card p {
+    color: #888;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer img {
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  

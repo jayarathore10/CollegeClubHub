@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Cultural Club</title>
+  <link rel="stylesheet" href="joinclub.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎭 Welcome to the Cultural Club!</h1>
+    <p>Where talents meet traditions! Join us in celebrating creativity through music, dance, drama, and unforgettable events.</p>
+
+    <form id="joinForm" class="join-form">
+      <input type="text" name="fullname" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="text" name="collegeId" placeholder="College ID" required />
+      <select name="interest" required>
+        <option value="">Select Interest</option>
+        <option value="Dance">Dance</option>
+        <option value="Drama">Drama</option>
+        <option value="Music">Music</option>
+      </select>
+      <textarea name="about" placeholder="Tell us about yourself..." rows="4" required></textarea>
+      <button type="submit">✨ Join Now</button>
+    </form>
+  </div>
+
+  <!-- Celebration Popup -->
+  <div id="celebrationPopup" class="popup hidden">
+    <div class="popup-content">
+      <h2>🎉 You joined <span id="popupClubName"></span>!</h2>
+      <p>Welcome to the club. Stay tuned for exciting events!</p>
+    </div>
+  </div>
+
+  <script src="joinclub.js"></script>
+</body>
+</html>
